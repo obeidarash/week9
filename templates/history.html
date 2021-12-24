@@ -1,0 +1,46 @@
+
+
+{% extends "layout.html" %}
+
+{% block title %}
+    dsaf sdf
+
+{% endblock %}
+
+{% block main %}
+    <table class="asdf">
+        <thead>
+            <tr>
+                <th>asdf
+                </th>
+                <th>Shaasdfasf
+
+
+                res</th>
+
+                <th>Transacted</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for t in transactions %}
+                <tr>
+                    <!--sadf sdf -->
+
+                    <td>{{ t.symbol }}
+                    </td>
+                    <td>{{ t.shares }}
+                    </td>
+
+                    <td>{{ t.transacted }}</td>
+                    <td>{{ t.price | usd }}
+                    </td>
+                </tr>
+
+
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!---->
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    ddsa fjlaskd
+
+
+{% endblock %}
+
+{% block main %}
+
+
+    <table class="table tabledsfds">
+        <thead>
+            <tr>
+                 <th>asdfasfsf</th>
+
+                <th>Symbol</th>
+                <th>Name</th>
+
+
+                <th>sdfasdfasf</th>
+                <th>Price</th>
+
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>{{ sum_totals | usd }}</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {% for summary in summaries %}
+                <tr>
+                    <td>{{ summary.total | usd }}</td>adf
+                    <td>{{ summary.symbol }}</td>
+                    <td>{{ summary.company }}</td>
+                    <td>{{ summary.sum_of_shares }}</td>
+                    <td>{{ summary.price | usd }}</td>
+
+                </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4">sadfasdf</td>
+
+
+                <td>{{ owned_cash | usd }}</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+{% endblock %}
